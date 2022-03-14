@@ -1,3 +1,14 @@
+.ranmaya {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+/* 
 .App {
   text-align: center;
 }
@@ -22,6 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0.5em;
 }
 
 .App-link {
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

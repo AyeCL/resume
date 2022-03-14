@@ -1,26 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/App.css';
 import logo from './logo.svg';
-import './App.css';
+import { Alert } from 'bootstrap';
+import { Container, Button, Col, Navbar } from 'react-bootstrap';
+import NavigationMenu from './NavigationMenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          ranmaya
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationMenu />
     </div>
   );
 }
