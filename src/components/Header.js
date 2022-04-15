@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='container text-center topic' style={{ paddingTop: '1vh', paddingBottom: '2vh' }}>
       <MobileView>
-        <div style={{ paddingTop: '1em' }}></div>
+        <div style={{ paddingTop: '1vh' }}></div>
       </MobileView>
       <h1>
         Aayush Lamichhane
