@@ -253,7 +253,7 @@ function LeadershipExperience() {
             <em>President</em>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
-            JanAugust 2016 - May 2018
+            August 2016 - May 2018
           </div>
         </Row>
         <Row>
