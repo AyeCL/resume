@@ -12,9 +12,9 @@ function App() {
       <Header />
       <Education />
       <Technologies />
-      <RelevantCoursework />
       <WorkExperience />
       <Projects />
+      <RelevantCoursework />
       <LeadershipExperience />
     </>
   );
@@ -86,25 +86,6 @@ function WorkExperience() {
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7' style={{ fontSize: '1.1em' }}>
-            <strong>Colorado State University</strong><br/>
-            <em>Resident Assistant</em>
-          </div>
-          <div className='col-5' style={{ textAlign: 'right' }}>
-            August 2021 - Present<br/>
-            Fort Collins, CO
-          </div>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Foster a diverse community through events and provide more than 40 residents with appropriate resources.</li>
-              <li>Direct and edit introduction videos for the staff team using Final Cut Pro.</li>
-              <li>Create a safe environment by reinforcing campus policies.</li>
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <div className='col-7' style={{ fontSize: '1.1em' }}>
             <strong>Capital College and Research Center (CCRC)</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
@@ -139,7 +120,7 @@ function WorkExperience() {
         <Row>
           <Col>
             <ul>
-              <li>Upgraded the entire networking infrastructure with more than 12 Access Points, and an enterprise router.</li>
+              <li>Upgraded the entire networking infrastructure of two buildings with around 12 Access Points, and an enterprise router.</li>
               <li>Setup a local server system to store and manipulate data between two buildings.</li>
             </ul>
           </Col>
@@ -160,6 +141,25 @@ function WorkExperience() {
               <li>Manage social media accounts and handle social media advertising using Facebook (now Meta) Business Suite.</li>
               <li>Write social media posts and advertisement material for newspapers.</li>
               <li>Envisioned and created an ad video using Final Cut Pro that was played during CCRC’s Admissions 2021.</li>
+            </ul>
+          </Col>
+        </Row>
+        <Row>
+          <div className='col-7' style={{ fontSize: '1.1em' }}>
+            <strong>Colorado State University</strong><br/>
+            <em>Resident Assistant</em>
+          </div>
+          <div className='col-5' style={{ textAlign: 'right' }}>
+            August 2021 - Present<br/>
+            Fort Collins, CO
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <ul>
+              <li>Foster a diverse community through events and provide more than 40 residents with appropriate resources.</li>
+              <li>Direct and edit introduction videos for the staff team using Final Cut Pro.</li>
+              <li>Create a safe environment by reinforcing campus policies.</li>
             </ul>
           </Col>
         </Row>
