@@ -17,7 +17,7 @@ function Projects() {
         <Row>
           <Col>
             <ul>
-              <li><span style={{ backgroundColor: 'yellow' }}>Conducted scrum meetings, react, java, junit, maven, git, and github.</span></li>
+              <li>Conducted scrum meetings, react, java, junit, maven, git, and github.</li>
               <li>Built a web app using React as frontend and Java in the backend along with a MySQL database. The app was essentially a trip calculator that featured an OpenStreet Maps module. The user could create trips by searching for places or tapping on the map and the app would calculate distances between points, total distance and so on.</li>
             </ul>
           </Col>
