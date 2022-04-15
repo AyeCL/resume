@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
+import LinkInNewTab from './LinkInNewTab';
 
 function Projects() {
   return (
@@ -17,7 +18,7 @@ function Projects() {
         <Row>
           <Col>
             <ul>
-              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <a href='https://www.netlify.com/' target='_blank' rel='noreferrer noopener' className='link-dark'>Netlify</a>.</li>
+              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <LinkInNewTab href='https://www.netlify.com/'>Netlify</LinkInNewTab>.</li>
             </ul>
           </Col>
         </Row>

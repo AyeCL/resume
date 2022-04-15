@@ -1,4 +1,5 @@
 import React from 'react'
+import LinkInNewTab from './LinkInNewTab'
 
 function Technologies() {
   return (
@@ -32,12 +33,6 @@ function Technologies() {
         <LinkInNewTab href='https://www.tutorialspoint.com/unix/shell_scripting.htm'>Shell Scripting</LinkInNewTab>
     </div>
   )
-}
-
-function LinkInNewTab(props) {
-    return (
-        <a href={props.href} target='_blank' rel='noopener noreferrer' className='link-dark'>{props.children}</a>
-    )
 }
 
 export default Technologies
