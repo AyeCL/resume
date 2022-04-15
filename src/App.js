@@ -117,7 +117,7 @@ function WorkExperience() {
             <em>Web Developer</em>
           </div>
           <div className='col-5' style={{ textAlign: 'right', fontSize: '0.9em' }}>
-            August 2018 - Present<br/>
+            <em>August 2018 - Present</em><br/>
           </div>
         </Row>
         <Row>
@@ -133,7 +133,7 @@ function WorkExperience() {
             <em>Network Administrator</em>
           </div>
           <div className='col-5' style={{ textAlign: 'right', fontSize: '0.9em' }}>
-            Summer 2018<br/>
+            <em>Summer 2018</em><br/>
           </div>
         </Row>
         <Row>
@@ -149,7 +149,7 @@ function WorkExperience() {
             <em>Marketing Officer and Chief Editor (English Content)</em>
           </div>
           <div className='col-5' style={{ textAlign: 'right', fontSize: '0.9em' }}>
-            August 2016 - Present<br/>
+            <em>August 2016 - Present</em><br/>
           </div>
         </Row>
         <Row>
