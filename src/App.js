@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
-import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
-// import Header from './components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
