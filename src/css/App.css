@@ -22,6 +22,10 @@
   margin-bottom: 1vh;
 }
 
+a:hover {
+  color: #194181 !important;
+}
+
 /* 
 .App {
   text-align: center;
