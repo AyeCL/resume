@@ -36,7 +36,7 @@ function Technologies() {
 
 function LinkInNewTab(props) {
     return (
-        <a href={props.href} target='_blank' rel='noopener noreferrer'>{props.children}</a>
+        <a href={props.href} target='_blank' rel='noopener noreferrer' className='link-dark'>{props.children}</a>
     )
 }
 
