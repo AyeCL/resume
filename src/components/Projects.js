@@ -8,6 +8,21 @@ function Projects() {
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7'>
+            <strong style={{ fontSize: '1.1em' }}>Online Resume (<a href='.'>lamichhane.us</a>)</strong><br/>
+          </div>
+          <div className='col-5' style={{ textAlign: 'right' }}>
+            March 2022
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <ul>
+              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <a href='https://www.netlify.com/' target='_blank' rel='noreferrer noopener'>Netlify</a>.</li>
+            </ul>
+          </Col>
+        </Row>
+        <Row>
+          <div className='col-7'>
             <strong style={{ fontSize: '1.1em' }}>CS314 Software Engineering Project</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
