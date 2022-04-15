@@ -98,7 +98,7 @@ function WorkExperience() {
           <Col>
             <ul>
               <li>Foster a diverse community through events and provide more than 40 residents with appropriate resources.</li>
-              <li>Direct and edit 2 introduction videos for the staff team using Final Cut Pro.</li>
+              <li>Direct and edit introduction videos for the staff team using Final Cut Pro.</li>
               <li>Create a safe environment by reinforcing campus policies.</li>
             </ul>
           </Col>
