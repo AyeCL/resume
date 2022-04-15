@@ -8,6 +8,20 @@
   padding: 0.5em;
 }
 
+.heading {
+  margin-bottom: 0.1vh;
+}
+
+.verticalLine {
+  margin-top: 0; 
+  margin-bottom: 1vh;
+}
+
+.topic {
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}
+
 /* 
 .App {
   text-align: center;
