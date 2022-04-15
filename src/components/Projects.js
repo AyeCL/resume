@@ -18,7 +18,7 @@ function Projects() {
         <Row>
           <Col>
             <ul>
-              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <LinkInNewTab href='https://www.netlify.com/'>Netlify</LinkInNewTab>.</li>
+              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <LinkInNewTab href='https://www.netlify.com/'>Netlify</LinkInNewTab>. (<LinkInNewTab href='https://github.com/AyeCL/resume'>view source code</LinkInNewTab>)</li>
             </ul>
           </Col>
         </Row>
