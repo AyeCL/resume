@@ -82,7 +82,7 @@ function SocialButtons() {
 function getFooterLine(index) {
     const lines = [
         <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
-        <>Wait...is this line changing everytime i click on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
+        <>Wait...is this line changing everytime i tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
         <>Have a good day <Emoji symbol='😉' label='wink' /></>,
         <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
         <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
