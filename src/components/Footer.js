@@ -73,12 +73,14 @@ function Footer() {
         <div className='container topic' style={{ paddingTop: '3vh', paddingBottom: '1.5vh' }}>
             <hr className='verticalLine' />
             <Row>
-                <Col className='col-8' onClick={
-                    () => {
+                <Col 
+                    className='col-8' 
+                    onClick={() => {
                         setLineIndex(generateRandomIndex())
                         setShowTip(false)
-                    }
-                }>
+                    }}
+                    style={{ cursor: 'pointer' }}
+                >
                     <span style={{ fontSize: '1.5em' }}></span>{ showTip ? TapMe() : null }{line}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
