@@ -13,6 +13,7 @@ function WorkExperience() {
           <div className='col-5' style={{ textAlign: 'right' }}>
             August 2016 - Present<br/>
             Kathmandu, Nepal
+            rando
           </div>
         </Row>
         <Row>
