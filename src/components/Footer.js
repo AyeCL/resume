@@ -58,7 +58,7 @@ function Footer() {
 function SocialButtons() {
     return (
         <div style={{ fontSize: '1.5em' }}>
-            <LinkInNewTab href='#' className='githubIconLink'>
+            <LinkInNewTab href='https://github.com/AyeCL' className='githubIconLink'>
                 <FontAwesomeIcon icon="fa-brands fa-github" />
             </LinkInNewTab>
             {" "}&nbsp;{ isMobile ? <>&nbsp;&nbsp;</> : null }
@@ -66,11 +66,11 @@ function SocialButtons() {
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" />
             </LinkInNewTab>
             {" "}&nbsp;{ isMobile ? <>&nbsp;&nbsp;</> : null }
-            <LinkInNewTab href='#'  className='instagramIconLink'>
+            <LinkInNewTab href='https://www.instagram.com/aye.yell/'  className='instagramIconLink'>
                 <FontAwesomeIcon icon="fa-brands fa-instagram" />
             </LinkInNewTab>
             {" "}&nbsp;{ isMobile ? <>&nbsp;&nbsp;</> : null }
-            <LinkInNewTab href='#' className='facebookIconLink'>
+            <LinkInNewTab href='https://www.facebook.com/AyeYell' className='facebookIconLink'>
                 <FontAwesomeIcon icon="fa-brands fa-facebook" />
             </LinkInNewTab>
         </div>
