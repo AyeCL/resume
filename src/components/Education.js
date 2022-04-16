@@ -17,12 +17,15 @@ function Education(props) {
         <Col className='col-8'>
         <FontAwesomeIcon icon="fa-solid fa-graduation-cap" fontSize={'1.2em'} /> <h4 className='heading' style={{ display: 'inline' }}>Education</h4>
         </Col>
-        <Col className='col-4' style={{ textAlign: 'right' }} >
-          <span onClick={() => {
-            toggleTheme()
-            setShowTip(false)
-          }}>
-            { showTip ? TapMe() : null }{ props.theme === 'light' ? <SunFill fontSize={'1.2em'} /> : <MoonFill fontSize={'1.1em'} /> }
+        <Col className='col-4' style={{ textAlign: 'right', paddingBottom: '0.3em' }} >
+          <span 
+            onClick={() => {
+              toggleTheme()
+              setShowTip(false)
+            }}
+            style={{ cursor: 'pointer' }}
+          >
+            { showTip ? TapMe() : null }{ props.theme === 'light' ? <SunFill style={{ fontSize: '1.2em' }} /> : <MoonFill fontSize={'1.1em'} /> }
           </span>
         </Col>
       </Row>
