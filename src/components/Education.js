@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import { Lightbulb, LightbulbOff } from 'react-bootstrap-icons';
+import { SunFill, MoonFill } from 'react-bootstrap-icons';
 
 function Education(props) {
   const toggleTheme = () => {
@@ -15,7 +15,7 @@ function Education(props) {
         </Col>
         <Col className='col-4' style={{ textAlign: 'right' }} >
           <span onClick={ () => {toggleTheme()} }>
-            { props.theme === 'light' ? <Lightbulb fontSize={'1.2em'} /> : <LightbulbOff fontSize={'1.2em'} /> }
+            { props.theme === 'light' ? <SunFill fontSize={'1.2em'} /> : <MoonFill fontSize={'1.1em'} /> }
           </span>
         </Col>
       </Row>
