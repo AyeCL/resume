@@ -26,6 +26,22 @@ a:hover {
   color: #1b94b3 !important;
 }
 
+.githubIconLink :hover {
+  color: #646464 !important;
+}
+
+.linkedInIconLink :hover {
+  color: #0e76a8 !important;
+}
+
+.instagramIconLink :hover {
+  color: #e1306c !important;
+}
+
+.facebookIconLink :hover {
+  color: #3b5998 !important;
+}
+
 /* 
 .App {
   text-align: center;
