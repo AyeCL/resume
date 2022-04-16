@@ -7,33 +7,40 @@ import { isMobile } from 'react-device-detect'
 import LinkInNewTab from './modules/LinkInNewTab'
 
 function Footer() {
-    const lines = [
-        <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
-        <>Wait...does this line change everytime I tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
-        <>Have a good day <Emoji symbol='😉' label='wink' /></>,
-        <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
-        <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
-        <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
-        <>I hike a lot <Emoji symbol='🥾' label='shoes' /></>,
-        <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
-        <>And if the resume still doesn't convince you to hire me, tap this line <Emoji symbol='👀' label='eyes' /></>,
-        <>I have been programming since I was 11 <Emoji symbol='🐣' label='kid' /><Emoji symbol='👨‍💻' label='work' /></>,
-        <>Grew up in Kathmandu <Emoji symbol='🇳🇵' label='Nepal' /></>,
-    ]
+    function lines(index) {
+        const lineArray = [
+            <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
+            <>Wait...does this line change everytime I tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
+            <>Have a good day <Emoji symbol='😉' label='wink' /></>,
+            <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
+            <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
+            <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
+            <>I hike a lot <Emoji symbol='🥾' label='shoes' /></>,
+            <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
+            <>And if the resume still doesn't convince you to hire me, tap this line <Emoji symbol='👀' label='eyes' /></>,
+            <>I have been programming since I was 11 <Emoji symbol='🐣' label='kid' /><Emoji symbol='👨‍💻' label='work' /></>,
+            <>Grew up in Kathmandu <Emoji symbol='🇳🇵' label='Nepal' /></>,
+        ]
+        const lineObj = {
+            line: lineArray[index],
+            length: lineArray.length,
+        }
+        return lineObj
+    }
     
-    const [lineIndex, setLineIndex] = useState(Math.floor(Math.random() * lines.length))
-    const [line, setLine] = useState(lines[lineIndex])
+    const [lineIndex, setLineIndex] = useState(Math.floor(Math.random() * lines(0).length))
+    const [line, setLine] = useState(lines(lineIndex).line)
 
     const generateRandomIndex = () => { 
-        let index = Math.floor(Math.random() * lines.length)
+        let index = Math.floor(Math.random() * lines(0).length)
         while (index === lineIndex) {
-            index = Math.floor(Math.random() * lines.length)
+            index = Math.floor(Math.random() * lines(0).length)
         }
         return index
     }
     
     useEffect(() => {
-        setLine(lines[lineIndex])
+        setLine(lines(lineIndex).line)
     }, [lineIndex])
 
     const [showFooterTip, setShowFooterTip] = useState(true)
