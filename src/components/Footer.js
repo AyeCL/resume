@@ -29,8 +29,13 @@ function Footer() {
             <div className='container topic text-center' style={{ paddingTop: '3vh', paddingBottom: '2vh' }}>
                 <hr className='verticalLine' />
                 <Row style={{ paddingTop: '1.8vh' }}>
-                    <Col>
-                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} onClick={setShowFooterTip(false)}>(Tap me!) </span> : null }<span onClick={() => {setFooterLineIndex(generateRandomIndex())}}>{footerLine}</span>
+                    <Col onClick={
+                        () => {
+                            setFooterLineIndex(generateRandomIndex())
+                            setShowFooterTip(false)
+                        }
+                    }>
+                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} >(Tap me!) </span> : null }{footerLine}
                         <br />
                     </Col>
                 </Row>
@@ -46,8 +51,13 @@ function Footer() {
         <div className='container topic' style={{ paddingTop: '3vh', paddingBottom: '1.5vh' }}>
             <hr className='verticalLine' />
             <Row>
-                <Col className='col-8'>
-                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} onClick={setShowFooterTip(false)}>(Tap me!) </span> : null }<span style={{ fontSize: '1.5em' }}></span><span onClick={ () => {setFooterLineIndex(generateRandomIndex())} }>{footerLine}</span>
+                <Col className='col-8' onClick={
+                    () => {
+                        setFooterLineIndex(generateRandomIndex())
+                        setShowFooterTip(false)
+                    }
+                }>
+                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? <span style={{ fontSize: '0.8em' }} >(Tap me!) </span> : null }{footerLine}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}
