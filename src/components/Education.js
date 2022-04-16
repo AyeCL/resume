@@ -1,11 +1,14 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 import { SunFill, MoonFill } from 'react-bootstrap-icons';
+import TapMe from './modules/TapMe';
 
 function Education(props) {
   const toggleTheme = () => {
     props.setTheme(props.theme === 'light' ? 'dark' : 'light')
   }
+
+  const [showTip, setShowTip] = React.useState(true)
 
   return (
     <div className='container topic'>
@@ -14,8 +17,11 @@ function Education(props) {
           <h4 className='heading'>Education</h4>
         </Col>
         <Col className='col-4' style={{ textAlign: 'right' }} >
-          <span onClick={ () => {toggleTheme()} }>
-            { props.theme === 'light' ? <SunFill fontSize={'1.2em'} /> : <MoonFill fontSize={'1.1em'} /> }
+          <span onClick={() => {
+            toggleTheme()
+            setShowTip(false)
+          }}>
+            { showTip ? TapMe() : null }{ props.theme === 'light' ? <SunFill fontSize={'1.2em'} /> : <MoonFill fontSize={'1.1em'} /> }
           </span>
         </Col>
       </Row>

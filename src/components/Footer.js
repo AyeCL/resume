@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Emoji from './Emoji'
 import { isMobile } from 'react-device-detect'
 import LinkInNewTab from './modules/LinkInNewTab'
+import TapMe from './modules/TapMe'
 
 function Footer() {
     function lines(index) {
@@ -43,13 +44,7 @@ function Footer() {
         setLine(lines(lineIndex).line)
     }, [lineIndex])
 
-    const [showFooterTip, setShowFooterTip] = useState(true)
-
-    const tapMe = () => {
-        return (
-            <span style={{ fontSize: '0.8em', color: '#e1306c'  }} >(Tap me!) </span>
-        )
-    }
+    const [showTip, setShowTip] = useState(true)
 
     if (isMobile) {
         return (
@@ -59,10 +54,10 @@ function Footer() {
                     <Col onClick={
                         () => {
                             setLineIndex(generateRandomIndex())
-                            setShowFooterTip(false)
+                            setShowTip(false)
                         }
                     }>
-                    { showFooterTip ? tapMe() : null }{line}
+                    { showTip ? TapMe() : null }{line}
                         <br />
                     </Col>
                 </Row>
@@ -81,10 +76,10 @@ function Footer() {
                 <Col className='col-8' onClick={
                     () => {
                         setLineIndex(generateRandomIndex())
-                        setShowFooterTip(false)
+                        setShowTip(false)
                     }
                 }>
-                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? tapMe() : null }{line}
+                    <span style={{ fontSize: '1.5em' }}></span>{ showTip ? TapMe() : null }{line}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}
