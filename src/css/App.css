@@ -22,10 +22,6 @@
   margin-bottom: 1vh;
 }
 
-a:hover {
-  color: #1b94b3 !important;
-}
-
 .githubIconLink :hover {
   color: #646464 !important;
 }
@@ -40,6 +36,14 @@ a:hover {
 
 .facebookIconLink :hover {
   color: #3b5998 !important;
+}
+
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  transition: all .5s;
 }
 
 /* 
