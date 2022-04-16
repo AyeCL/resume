@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkInNewTab from './LinkInNewTab'
+import LinkInNewTab from './modules/LinkInNewTab'
 
 function Technologies() {
   return (

@@ -4,23 +4,44 @@ import { Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Emoji from './Emoji'
 import { isMobile } from 'react-device-detect'
-import LinkInNewTab from './LinkInNewTab'
+import LinkInNewTab from './modules/LinkInNewTab'
 
 function Footer() {
-    const [footerLineIndex, setFooterLineIndex] = useState(Math.floor(Math.random() * 9))
-    const [footerLine, setFooterLine] = useState(getFooterLine(footerLineIndex))
+    function lines(index) {
+        const lineArray = [
+            <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
+            <>Wait...does this line change everytime I tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
+            <>Have a good day <Emoji symbol='😉' label='wink' /></>,
+            <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
+            <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
+            <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
+            <>I like hiking a lot <Emoji symbol='🥾' label='shoes' /></>,
+            <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
+            <>And if the resume still doesn't convince you to hire me, tap this line <Emoji symbol='👀' label='eyes' /></>,
+            <>I have been programming since I was 11 <Emoji symbol='🐣' label='kid' /><Emoji symbol='👨‍💻' label='work' /></>,
+            <>Grew up in Kathmandu <Emoji symbol='🇳🇵' label='Nepal' /></>,
+        ]
+        const lineObj = {
+            line: lineArray[index],
+            length: lineArray.length,
+        }
+        return lineObj
+    }
+    
+    const [lineIndex, setLineIndex] = useState(Math.floor(Math.random() * lines(0).length))
+    const [line, setLine] = useState(lines(lineIndex).line)
 
     const generateRandomIndex = () => { 
-        let index = Math.floor(Math.random() * (9 - 0))
-        while (index === footerLineIndex) {
-            index = Math.floor(Math.random() * (9 - 0))
+        let index = Math.floor(Math.random() * lines(0).length)
+        while (index === lineIndex) {
+            index = Math.floor(Math.random() * lines(0).length)
         }
         return index
     }
     
     useEffect(() => {
-        setFooterLine(getFooterLine(footerLineIndex))
-    }, [footerLineIndex])
+        setLine(lines(lineIndex).line)
+    }, [lineIndex])
 
     const [showFooterTip, setShowFooterTip] = useState(true)
 
@@ -37,11 +58,11 @@ function Footer() {
                 <Row style={{ paddingTop: '1.8vh' }}>
                     <Col onClick={
                         () => {
-                            setFooterLineIndex(generateRandomIndex())
+                            setLineIndex(generateRandomIndex())
                             setShowFooterTip(false)
                         }
                     }>
-                    { showFooterTip ? tapMe() : null }{footerLine}
+                    { showFooterTip ? tapMe() : null }{line}
                         <br />
                     </Col>
                 </Row>
@@ -59,11 +80,11 @@ function Footer() {
             <Row>
                 <Col className='col-8' onClick={
                     () => {
-                        setFooterLineIndex(generateRandomIndex())
+                        setLineIndex(generateRandomIndex())
                         setShowFooterTip(false)
                     }
                 }>
-                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? tapMe() : null }{footerLine}
+                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? tapMe() : null }{line}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}
@@ -94,21 +115,6 @@ function SocialButtons() {
         </div>
     )
 
-}
-
-function getFooterLine(index) {
-    const lines = [
-        <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
-        <>Wait...is this line changing everytime i tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
-        <>Have a good day <Emoji symbol='😉' label='wink' /></>,
-        <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
-        <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
-        <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
-        <>I hike a lot <Emoji symbol='🥾' label='shoes' /></>,
-        <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
-        <>And if the resume still doesn't convince you to hire me, tap this line! <Emoji symbol='👀' label='eyes' /></>,
-    ]
-    return lines[index]
 }
 
 export default Footer

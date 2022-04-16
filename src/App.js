@@ -11,21 +11,24 @@ import Projects from './components/Projects';
 import RelevantCoursework from './components/RelevantCoursework';
 import LeadershipExperience from './components/LeadershipExperience';
 import Footer from './components/Footer';
+import useLocalStorage from 'use-local-storage'
 
 library.add(fas, fab);
 
 function App() {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
   return (
-    <>
+    <div className='App' data-theme={theme}>
       <Header />
-      <Education />
+      <Education theme={theme} setTheme={setTheme} />
       <Technologies />
       <WorkExperience />
       <Projects />
       <RelevantCoursework />
       <LeadershipExperience />
       <Footer />
-    </>
+    </div>
   );
 }
 

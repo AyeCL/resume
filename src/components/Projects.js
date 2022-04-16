@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import LinkInNewTab from './LinkInNewTab';
+import LinkInNewTab from './modules/LinkInNewTab';
 
 function Projects() {
   return (
@@ -9,7 +9,7 @@ function Projects() {
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7'>
-            <strong style={{ fontSize: '1.1em' }}>Online Resume (<a href='.' className='link-dark'>lamichhane.us</a>)</strong><br/>
+            <strong style={{ fontSize: '1.1em' }}>Online Resume (<a href='.' >lamichhane.us</a>)</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
             March 2022
