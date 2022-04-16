@@ -1,10 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 
 function WorkExperience() {
   return (
     <div className='container topic'>
-        <h4 className='heading'>Work Experience</h4>
+        <FontAwesomeIcon icon="fa-solid fa-briefcase" fontSize={'1.2em'} /> <h4 className='heading' style={{ display: 'inline' }}>Work Experience</h4>     
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7' style={{ fontSize: '1.1em' }}>
