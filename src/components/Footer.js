@@ -24,6 +24,12 @@ function Footer() {
 
     const [showFooterTip, setShowFooterTip] = useState(true)
 
+    const tapMe = () => {
+        return (
+            <span style={{ fontSize: '0.8em', color: '#e1306c'  }} >(Tap me!) </span>
+        )
+    }
+
     if (isMobile) {
         return (
             <div className='container topic text-center' style={{ paddingTop: '3vh', paddingBottom: '2vh' }}>
@@ -35,7 +41,7 @@ function Footer() {
                             setShowFooterTip(false)
                         }
                     }>
-                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} >(Tap me!) </span> : null }{footerLine}
+                    { showFooterTip ? tapMe() : null }{footerLine}
                         <br />
                     </Col>
                 </Row>
@@ -57,7 +63,7 @@ function Footer() {
                         setShowFooterTip(false)
                     }
                 }>
-                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? <span style={{ fontSize: '0.8em' }} >(Tap me!) </span> : null }{footerLine}
+                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? tapMe() : null }{footerLine}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}
