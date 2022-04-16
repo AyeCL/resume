@@ -15,7 +15,7 @@ function Footer() {
             <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
             <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
             <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
-            <>I hike a lot <Emoji symbol='🥾' label='shoes' /></>,
+            <>I like hiking a lot <Emoji symbol='🥾' label='shoes' /></>,
             <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
             <>And if the resume still doesn't convince you to hire me, tap this line <Emoji symbol='👀' label='eyes' /></>,
             <>I have been programming since I was 11 <Emoji symbol='🐣' label='kid' /><Emoji symbol='👨‍💻' label='work' /></>,
