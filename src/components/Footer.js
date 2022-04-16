@@ -22,13 +22,15 @@ function Footer() {
         setFooterLine(getFooterLine(footerLineIndex))
     }, [footerLineIndex])
 
+    const [showFooterTip, setShowFooterTip] = useState(true)
+
     if (isMobile) {
         return (
             <div className='container topic text-center' style={{ paddingTop: '3vh', paddingBottom: '2vh' }}>
                 <hr className='verticalLine' />
                 <Row style={{ paddingTop: '1.8vh' }}>
                     <Col>
-                        <span onClick={() => {setFooterLineIndex(generateRandomIndex())}}>{footerLine}</span>
+                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} onClick={setShowFooterTip(false)}>(Tap me!) </span> : null }<span onClick={() => {setFooterLineIndex(generateRandomIndex())}}>{footerLine}</span>
                         <br />
                     </Col>
                 </Row>
@@ -45,7 +47,7 @@ function Footer() {
             <hr className='verticalLine' />
             <Row>
                 <Col className='col-8'>
-                    <span style={{ fontSize: '1.5em' }}></span><span onClick={ () => {setFooterLineIndex(generateRandomIndex())} }>{footerLine}</span>
+                    { showFooterTip ? <span style={{ fontSize: '0.8em' }} onClick={setShowFooterTip(false)}>(Tap me!) </span> : null }<span style={{ fontSize: '1.5em' }}></span><span onClick={ () => {setFooterLineIndex(generateRandomIndex())} }>{footerLine}</span>
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}
@@ -78,7 +80,6 @@ function SocialButtons() {
 
 }
 
-// generate a function to randomly select from a list of footer lines
 function getFooterLine(index) {
     const lines = [
         <>Made with <Emoji symbol='❤️' label='love' /> in Colorado <Emoji symbol='🏔' label='mountain' /></>,
