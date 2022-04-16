@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import LinkInNewTab from './LinkInNewTab';
+import LinkInNewTab from './modules/LinkInNewTab';
 
 function Projects() {
   return (
