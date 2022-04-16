@@ -14,7 +14,7 @@ function Footer() {
             <>Wait...does this line change everytime I tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
             <>Have a good day <Emoji symbol='😉' label='wink' /></>,
             <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
-            <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
+            <>I play the <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
             <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
             <>I like hiking a lot <Emoji symbol='🥾' label='shoes' /></>,
             <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
