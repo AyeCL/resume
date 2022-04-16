@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Emoji from './Emoji'
 import { isMobile } from 'react-device-detect'
 import LinkInNewTab from './LinkInNewTab'
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
     if (isMobile) {
