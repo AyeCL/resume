@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Lightbulb, LightbulbOff } from 'react-bootstrap-icons';
 
 function Education(props) {
   const toggleTheme = () => {
@@ -15,9 +16,7 @@ function Education(props) {
         </Col>
         <Col className='col-4' style={{ textAlign: 'right' }} >
           <span onClick={ () => {toggleTheme()} }>
-            <FontAwesomeIcon icon='moon' />
-            <FontAwesomeIcon icon={ props.theme === 'light' ? "fa-solid fa-arrow-right-long" : "fa-solid fa-arrow-left-long"} />{' '}
-            <FontAwesomeIcon icon='sun' />{' '}
+            { props.theme === 'light' ? <Lightbulb fontSize={'1.2em'} /> : <LightbulbOff fontSize={'1.2em'} /> }
           </span>
         </Col>
       </Row>
