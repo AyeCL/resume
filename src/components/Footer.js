@@ -87,7 +87,7 @@ function getFooterLine(index) {
         <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
         <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
         <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
-        <>I like going hiking a lot <Emoji symbol='🥾' label='shoes' /></>,
+        <>I hike a lot <Emoji symbol='🥾' label='shoes' /></>,
         <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
         <>And if the resume still doesn't convince you to hire me, tap this line! <Emoji symbol='👀' label='eyes' /></>,
     ]
