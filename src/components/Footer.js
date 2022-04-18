@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Emoji from './Emoji'
 import { isMobile } from 'react-device-detect'
 import LinkInNewTab from './modules/LinkInNewTab'
+import TapMe from './modules/TapMe'
 
 function Footer() {
     function lines(index) {
@@ -13,7 +14,7 @@ function Footer() {
             <>Wait...does this line change everytime I tap on it? <Emoji symbol='🤨' label='eyebrow-raise' /></>,
             <>Have a good day <Emoji symbol='😉' label='wink' /></>,
             <>I'm a <Emoji symbol='💻' label='computer' /> nerd. quite clearly.</>,
-            <>I play <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
+            <>I play the <Emoji symbol='🎸' label='guitar' />, <Emoji symbol='🎹' label='keyboard' />, flute and I also sing <Emoji symbol='🎤' label='sing' /></>,
             <>I love being outdoors <Emoji symbol='🌴' label='tree' /></>,
             <>I like hiking a lot <Emoji symbol='🥾' label='shoes' /></>,
             <>I am with Ukraine <Emoji symbol='🇺🇦' label='Ukraine' /></>,
@@ -43,13 +44,7 @@ function Footer() {
         setLine(lines(lineIndex).line)
     }, [lineIndex])
 
-    const [showFooterTip, setShowFooterTip] = useState(true)
-
-    const tapMe = () => {
-        return (
-            <span style={{ fontSize: '0.8em', color: '#e1306c'  }} >(Tap me!) </span>
-        )
-    }
+    const [showTip, setShowTip] = useState(true)
 
     if (isMobile) {
         return (
@@ -59,10 +54,10 @@ function Footer() {
                     <Col onClick={
                         () => {
                             setLineIndex(generateRandomIndex())
-                            setShowFooterTip(false)
+                            setShowTip(false)
                         }
                     }>
-                    { showFooterTip ? tapMe() : null }{line}
+                    { showTip ? TapMe() : null }{line}
                         <br />
                     </Col>
                 </Row>
@@ -78,13 +73,15 @@ function Footer() {
         <div className='container topic' style={{ paddingTop: '3vh', paddingBottom: '1.5vh' }}>
             <hr className='verticalLine' />
             <Row>
-                <Col className='col-8' onClick={
-                    () => {
+                <Col 
+                    className='col-8' 
+                    onClick={() => {
                         setLineIndex(generateRandomIndex())
-                        setShowFooterTip(false)
-                    }
-                }>
-                    <span style={{ fontSize: '1.5em' }}></span>{ showFooterTip ? tapMe() : null }{line}
+                        setShowTip(false)
+                    }}
+                    style={{ cursor: 'pointer' }}
+                >
+                    <span style={{ fontSize: '1.5em' }}></span>{ showTip ? TapMe() : null }{line}
                 </Col>
                 <Col className='col-4' style={{ textAlign: 'right' }}>
                     {SocialButtons()}

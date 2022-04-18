@@ -1,11 +1,12 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 import LinkInNewTab from './modules/LinkInNewTab';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Projects() {
   return (
     <div className='container topic'>
-        <h4 className='heading'>Projects</h4>
+        <FontAwesomeIcon icon="fa-solid fa-code" fontSize={'1.2em'} /> <h4 className='heading' style={{ display: 'inline' }}>Projects</h4>
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7'>
