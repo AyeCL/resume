@@ -9,12 +9,46 @@ function WorkExperience() {
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7' style={{ fontSize: '1.1em' }}>
+            <strong>Colorado State University</strong><br/>
+            <em>Resident Assistant</em>
+          </div>
+          <div className='col-5' style={{ textAlign: 'right' }}>
+            August 2021 - Present<br/>
+            Fort Collins, CO
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <ul>
+              <li>Foster a diverse community through events and provide more than 40 residents with appropriate resources.</li>
+              <li>Direct and edit introduction videos for the staff team using Final Cut Pro.</li>
+              <li>Create a safe environment by reinforcing campus policies.</li>
+            </ul>
+          </Col>
+        </Row>
+        <Row>
+          <div className='col-7' style={{ fontSize: '1.1em' }}>
             <strong>Capital College and Research Center (CCRC)</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
             August 2016 - Present<br/>
             Kathmandu, Nepal
           </div>
+        </Row>
+        <Row>
+          <div className='col-7'>
+            <em>Admissions Result Communication Pipeline Engineer</em>
+          </div>
+          <div className='col-5' style={{ textAlign: 'right', fontSize: '0.9em' }}>
+            <em>August 2018 - Present</em><br/>
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <ul>
+              <li>Envision and develop a communication pipeline to send SMS and Emails in bulk to more than 10,000 students when Admission Entrance Results were published. The SMS and Emails contained the student’s name and a custom result PDF created in bulk using Visual Basic macros on Microsoft Word. The PDFs were then uploaded onto CCRC’s server, and because the link would have to be shortened for SMS word count limit, a short domain was purchased and configured with Short.io to use as a redirector to where the pdfs were stored. The shortened links were exported and used to send out SMS and Emails using a local SMS API in Nepal and Sendinblue for email communications.</li>
+            </ul>
+          </Col>
         </Row>
         <Row>
           <div className='col-7'>
@@ -64,25 +98,6 @@ function WorkExperience() {
               <li>Manage social media accounts and handle social media advertising using Facebook (now Meta) Business Suite.</li>
               <li>Write social media posts and advertisement material for newspapers.</li>
               <li>Envisioned and created an ad video using Final Cut Pro that was played during CCRC’s Admissions 2021.</li>
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <div className='col-7' style={{ fontSize: '1.1em' }}>
-            <strong>Colorado State University</strong><br/>
-            <em>Resident Assistant</em>
-          </div>
-          <div className='col-5' style={{ textAlign: 'right' }}>
-            August 2021 - Present<br/>
-            Fort Collins, CO
-          </div>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Foster a diverse community through events and provide more than 40 residents with appropriate resources.</li>
-              <li>Direct and edit introduction videos for the staff team using Final Cut Pro.</li>
-              <li>Create a safe environment by reinforcing campus policies.</li>
             </ul>
           </Col>
         </Row>
