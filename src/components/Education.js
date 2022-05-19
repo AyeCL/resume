@@ -37,7 +37,7 @@ function Education(props) {
           </div>
           <div className='col-4' style={{ textAlign: 'right' }}>
               December 2023<br/>
-              GPA: 3.0
+              GPA: 3.4
           </div>
       </Row>
     </div>
