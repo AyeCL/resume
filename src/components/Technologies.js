@@ -8,7 +8,7 @@ function Technologies() {
       <FontAwesomeIcon icon="fa-solid fa-microchip heading" fontSize={'1.2em'} />{' '}
       <h4 style={{ display: 'inline' }} className='heading'>Technologies/Skills Familiar With</h4>
       <hr className='verticalLine'/>
-      <LinkInNewTab href='https://www.java.com/en/'>Java</LinkInNewTab>,{' '}
+      {/* <LinkInNewTab href='https://www.java.com/en/'>Java</LinkInNewTab>,{' '}
       <LinkInNewTab href='https://www.cplusplus.com/'>C++</LinkInNewTab>,{' '}
       <LinkInNewTab href='https://docs.microsoft.com/en-us/dotnet/csharp/'>C#</LinkInNewTab>,{' '}
       <LinkInNewTab href='https://docs.microsoft.com/en-us/cpp/c-language/?view=msvc-170'>C</LinkInNewTab>,{' '} 
@@ -32,7 +32,29 @@ function Technologies() {
       <LinkInNewTab href='https://www.linuxjournal.com/content/linux-command-line-interface-introduction-guide'>Linux Command Line</LinkInNewTab>,{' '} 
       <LinkInNewTab href='https://business.facebook.com/'> Meta (previously Facebook) Business Suite</LinkInNewTab>,{' '} 
       <LinkInNewTab href='https://www.json.org/json-en.html'>JSON</LinkInNewTab>,{' '} 
-      <LinkInNewTab href='https://www.tutorialspoint.com/unix/shell_scripting.htm'>Shell Scripting</LinkInNewTab>
+      <LinkInNewTab href='https://www.tutorialspoint.com/unix/shell_scripting.htm'>Shell Scripting</LinkInNewTab> */}
+      <LinkInNewTab href='#'>React</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>JavaScript</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Java</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Python</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>C</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>C++</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>HTML/CSS</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>PHP</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>NextJS</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Graphics Design</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Bootstrap</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>C#</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Docker</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Final Cut Pro</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>GPT-3</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Git</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Linux System Administration</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Digital Marketing</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Vercel</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Netlify</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>Shell Scripting</LinkInNewTab>,{' '}
+      <LinkInNewTab href='#'>SwiftUI</LinkInNewTab>
     </div>
   )
 }

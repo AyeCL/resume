@@ -36,8 +36,7 @@ function Education(props) {
               B.S. Computer Science - Artificial Intelligence and Machine Learning Concentration
           </div>
           <div className='col-4' style={{ textAlign: 'right' }}>
-              December 2023<br/>
-              GPA: 3.0
+              Fort Collins, CO
           </div>
       </Row>
     </div>

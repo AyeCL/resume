@@ -10,16 +10,31 @@ function Projects() {
         <hr className='verticalLine'/>
         <Row>
           <div className='col-7'>
-            <strong style={{ fontSize: '1.1em' }}>Online Resume (<a href='.' >lamichhane.us</a>)</strong><br/>
+            <strong style={{ fontSize: '1.1em' }}><LinkInNewTab href="https://talktostevejobs.com/">Talk to Steve Jobs</LinkInNewTab></strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
-            March 2022
+            <strong>December 2022</strong>
           </div>
         </Row>
         <Row>
           <Col>
             <ul>
-              <li>Created this online version of my resume using React, react-bootstrap and custom CSS; Deployed using <LinkInNewTab href='https://www.netlify.com/'>Netlify</LinkInNewTab>. (<LinkInNewTab href='https://github.com/AyeCL/resume'>view source code</LinkInNewTab>)</li>
+              <li>Web App based on NextJS and GPT-3. Deployed using Vercel, mimicking the likeness of Steve Jobs as a questionnaire-type search engine.</li>
+            </ul>
+          </Col>
+        </Row>
+        <Row>
+          <div className='col-7'>
+            <strong style={{ fontSize: '1.1em' }}><a href="https://lamichhane.us/">Online Resume</a></strong><br/>
+          </div>
+          <div className='col-5' style={{ textAlign: 'right' }}>
+            <strong>March 2022</strong>
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <ul>
+              <li>Developed and deployed an interactive online version of my resume using React, Bootstrap and CSS, utilizing Netlify for deployment.</li>
             </ul>
           </Col>
         </Row>
@@ -28,14 +43,14 @@ function Projects() {
             <strong style={{ fontSize: '1.1em' }}>CS314 Software Engineering Project</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
-            Spring 2022
+            <strong>Spring 2022</strong>
           </div>
         </Row>
         <Row>
           <Col>
             <ul>
-              <li>Conducted scrum meetings, react, java, junit, maven, git, and github.</li>
-              <li>Built a web app using React as frontend and Java in the backend along with a MySQL database. The app was essentially a trip calculator that featured an OpenStreet Maps module. The user could create trips by searching for places or tapping on the map and the app would calculate distances between points, total distance and so on.</li>
+              <li>Managed a trip calculator web app using React, Java, and MySQL, with an OpenStreet Maps module for location selection and distance calculation.</li>
+              <li>Participated in Scrum meetings and gained technical proficiency in React, Java, JUnit, and Git.</li>
             </ul>
           </Col>
         </Row>
@@ -44,32 +59,17 @@ function Projects() {
             <strong style={{ fontSize: '1.1em' }}>WingCliff.com</strong><br/>
           </div>
           <div className='col-5' style={{ textAlign: 'right' }}>
-            January 2014 - November 2017
+            <strong>January 2014 - November 2017</strong>
           </div>
         </Row>
         <Row>
           <Col>
             <ul>
-              <li>Built an online blog using WordPress; Posted how to’s, opinions, and updates on latest technologies.</li>
-              <li>Around 500 monthly active users at one point.</li>
+              <li>Designed and launched a custom WordPress-based blog featuring a range of content including how-to guides, opinions, and updates on latest technologies. Successfully grew the blog to 500 monthly active users at its peak.</li>
             </ul>
           </Col>
         </Row>
-        <Row>
-          <div className='col-7'>
-            <strong style={{ fontSize: '1.1em' }}>WordPress Theme</strong><br/>
-          </div>
-          <div className='col-5' style={{ textAlign: 'right' }}>
-            January 2014 - November 2017
-          </div>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Created a custom WordPress theme using HTML/CSS, Bootstrap and PHP for WingCliff.com.</li>
-            </ul>
-          </Col>
-        </Row>
+
     </div>
   )
 }
